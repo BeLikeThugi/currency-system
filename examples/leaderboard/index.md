@@ -25,7 +25,7 @@ cs.leaderboard(message.guild.id); // guild ID
 ```
 [`Click me to view Example Bot`](https://github.com/BIntelligent/currency-system/tree/main/ExampleBot) <br><br>
 <a href="https://bintelligent.github.io/currency-system/examples/transferMoney" class="button"><- Back</a>
-<a href="https://bintelligent.github.io/currency-system/examples/globleLeaderboard" class="button">Next -></a> <br><br><br>
+<a href="https://bintelligent.github.io/currency-system/examples/globalLeaderboard" class="button">Next -></a> <br><br><br>
 <style>
 .button {
     -webkit-appearance: button;
