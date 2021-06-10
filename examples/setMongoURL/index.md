@@ -8,7 +8,7 @@ const cs = new CurrencySystem;
 cs.setMongoURL('mongo Url Here');
 ```
 
-<a href="https://bintelligent.github.io/currency-system/examples/setMongoURL" class="button"><- Back</a>
+<a href="https://bintelligent.github.io/currency-system/examples/" class="button">Home</a>
 <a href="https://bintelligent.github.io/currency-system/examples/setDefaultWalletAmount" class="button">Next -></a> <br><br><br>
 <style>
 .button {
