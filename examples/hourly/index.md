@@ -24,7 +24,7 @@ let result = await cs.hourly({
 }
 ```
 [`Click me to view Example Bot`](https://github.com/BIntelligent/currency-system/tree/main/ExampleBot) <br><br>
-<a href="https://bintelligent.github.io/currency-system/examples/gloablLeaderboard" class="button"><- Back</a>
+<a href="https://bintelligent.github.io/currency-system/examples/globalLeaderboard" class="button"><- Back</a>
 <a href="https://bintelligent.github.io/currency-system/examples/quaterly" class="button">Next -></a> <br><br><br>
 <style>
 .button {
