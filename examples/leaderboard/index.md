@@ -1,4 +1,4 @@
-# cs.removeMoney()
+# cs.leaderboard()
 ```js
 // Requiring the Package
 const CurrencySystem = require("currency-system");
