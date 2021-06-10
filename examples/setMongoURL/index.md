@@ -7,7 +7,7 @@ const cs = new CurrencySystem;
 // Method:
 cs.setMongoURL('mongo Url Here');
 ```
-
+[`Click me to view Example Bot`](https://github.com/BIntelligent/currency-system/tree/main/ExampleBot) <br><br>
 <a href="https://bintelligent.github.io/currency-system/examples/" class="button">Home</a>
 <a href="https://bintelligent.github.io/currency-system/examples/setDefaultWalletAmount" class="button">Next -></a> <br><br><br>
 <style>
