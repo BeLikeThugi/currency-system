@@ -1,15 +1,16 @@
-# setMongoURL
-In Index.js Put this
+# cs.setMongoURL()
+Put this in Index.js
 ```js
 // require these at top of index.js
 const CurrencySystem = require("currency-system");
 const cs = new CurrencySystem;
 // Method:
-cs.setMongoURL(mongourl);
+cs.setMongoURL('mongo Url Here');
 ```
 
-<a href="https://google.com" class="button">Home</a>
-<a href="https://google.com" class="button">Next -></a>
+<a href="https://bintelligent.github.io/currency-system/" class="button">Home</a>
+<a href="https://bintelligent.github.io/currency-system/examples/setMongoURL" class="button"><- Back</a>
+<a href="https://bintelligent.github.io/currency-system/examples/setDefaultWalletAmount" class="button">Next -></a>
 <style>
 .button {
     -webkit-appearance: button;
