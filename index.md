@@ -1,7 +1,7 @@
   <h1>Currency-System</h1>
   <p>
-    <a href="https://www.npmjs.com/package/discord-buttons"><img src="https://img.shields.io/npm/v/currency-system?maxAge=3600" alt="NPM version" /></a>
-    <a href="https://www.npmjs.com/package/discord-buttons"><img src="https://img.shields.io/npm/dt/currency-system?maxAge=3600" alt="NPM downloads" /></a>
+    <a href="https://www.npmjs.com/package/currency-system"><img src="https://img.shields.io/npm/v/currency-system?maxAge=3600" alt="NPM version" /></a>
+    <a href="https://www.npmjs.com/package/currency-system"><img src="https://img.shields.io/npm/dt/currency-system?maxAge=3600" alt="NPM downloads" /></a>
   </p>
   <p>
     <a href="https://www.npmjs.com/package/currency-system"><img src="https://nodei.co/npm/currency-system.png?downloads=true&stars=true" alt="NPM Banner"></a>
@@ -27,4 +27,4 @@ cs.setDefaultBankAmount('1000');
 ```
 
 # ✍️ | Examples
-See [Examples](https://bintelligent.github.io/currency-system/examples.md)
+See [Examples](https://bintelligent.github.io/currency-system/examples)
