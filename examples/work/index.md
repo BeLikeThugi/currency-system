@@ -4,7 +4,7 @@
 const CurrencySystem = require("currency-system");
 const cs = new CurrencySystem;
 // Method:
-cs.monthly({
+cs.work({
         user: message.author, // user
         guild: message.guild, // guild, remove this line to make it global
         maxAmount: 100, // max earnable money
