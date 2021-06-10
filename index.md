@@ -8,8 +8,7 @@
   </p>
   
 
-  
-  # 📂 | Installation
+# 📂 | Installation
 ```sh
 npm i currency-system
 ```
