@@ -1,14 +1,4 @@
-<style>
-.button {
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
-
-    text-decoration: none;
-    color: initial;
-}
- </style>
- # setMongoURL
+# setMongoURL
 In Index.js Put this
 ```js
 // require these at top of index.js
@@ -19,4 +9,14 @@ cs.setMongoURL(mongourl);
 ```
 
 <a href="https://google.com" class="button">Home</a>
-<a href="https://google.com" class="button"> setDefaultWalletAmount | Next -></a>
+<a href="https://google.com" class="button">Next -></a>
+<style>
+.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-align: center;
+    text-decoration: none;
+    color: initial;
+}
+ </style>
