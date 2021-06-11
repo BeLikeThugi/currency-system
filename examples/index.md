@@ -37,7 +37,7 @@ Click them to view more info about the methods.
 ## Money Earning Methods
 
 13. User can use it once per hour.
-[`hourly`](https://bintelligent.github.io/examples/currency-system/hourly)
+[`hourly`](https://bintelligent.github.io/currency-system/examples/hourly)
 14. User can use it once every 6 hours.
 [`quaterly`](https://bintelligent.github.io/currency-system/examples/quaterly)
 15. User can use it once every 24 hours.
