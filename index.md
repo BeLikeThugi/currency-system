@@ -27,3 +27,6 @@ cs.setDefaultBankAmount('1000');
 
 # ✍️ | Examples
 See [Examples](https://bintelligent.github.io/currency-system/examples)
+
+# Custom Commands!
+See [Examples](https://bintelligent.github.io/currency-system/examples/custom/)
