@@ -42,15 +42,17 @@ Click them to view more info about the methods.
 [`quaterly`](https://bintelligent.github.io/currency-system/examples/quaterly)
 15. User can use it once every 24 hours.
 [`daily`](https://bintelligent.github.io/currency-system/examples/daily)
-16. User can use it once every 7 days.
+16. User can use it once every 24 hours.
+[`hafly`](https://bintelligent.github.io/currency-system/examples/hafly)
+17. User can use it once every 7 days.
 [`weekly`](https://bintelligent.github.io/currency-system/examples/weekly)
-17. User can use it once every month.
+18. User can use it once every month.
 [`monthly`](https://bintelligent.github.io/currency-system/examples/monthly)
-18. User can use it every x time. Which Bot Developor can set.
+19. User can use it every x time. Which Bot Developor can set.
 [`work`](https://bintelligent.github.io/currency-system/examples/work)
-19. Rob's a user and have 50-50 chance of getting his money.
+20. Rob's a user and have 50-50 chance of getting his money.
 [`rob`](https://bintelligent.github.io/currency-system/examples/rob)
-19. User can use it every x time. Which Bot Developor can set
+21. User can use it every x time. Which Bot Developor can set
 [`beg`](https://bintelligent.github.io/currency-system/examples/beg)
 
 # New!! 
