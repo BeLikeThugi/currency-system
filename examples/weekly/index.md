@@ -24,7 +24,7 @@ let result = await cs.weekly({
 }
 ```
 [`Click me to view Example Bot`](https://github.com/BIntelligent/currency-system/tree/main/ExampleBot) <br><br>
-<a href="https://bintelligent.github.io/currency-system/examples/daily" class="button"><- Back</a>
+<a href="https://bintelligent.github.io/currency-system/examples/hafly" class="button"><- Back</a>
 <a href="https://bintelligent.github.io/currency-system/examples/monthly" class="button">Next -></a> <br><br><br>
 <style>
 .button {
