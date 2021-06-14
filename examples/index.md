@@ -40,10 +40,10 @@ Click them to view more info about the methods.
 [`hourly`](https://bintelligent.github.io/currency-system/examples/hourly)
 14. User can use it once every 6 hours.
 [`quaterly`](https://bintelligent.github.io/currency-system/examples/quaterly)
-15. User can use it once every 24 hours.
-[`daily`](https://bintelligent.github.io/currency-system/examples/daily)
-16. User can use it once every 24 hours.
+15. User can use it once every 12 hours.
 [`hafly`](https://bintelligent.github.io/currency-system/examples/hafly)
+16. User can use it once every 24 hours.
+[`daily`](https://bintelligent.github.io/currency-system/examples/daily)
 17. User can use it once every 7 days.
 [`weekly`](https://bintelligent.github.io/currency-system/examples/weekly)
 18. User can use it once every month.
