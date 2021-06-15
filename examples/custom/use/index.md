@@ -1,33 +1,38 @@
 ## Example
 ```js
    const CurrencySystem = require("currency-system");
-const cs = new CurrencySystem;
+   const cs = new CurrencySystem;
 
-    // !use <item name from your inventory>
-    let item = args[0];
-    if (!item) return message.channel.send("What item you wana use?")
-    let haveItem = false;
-    const arr = await cs.getUserItems({
-        user: message.author,
-        guild: message.guild,
-    })
-    for (key of arr.inventory) {
-        if (key.name.toLowerCase().includes(item.toLowerCase())) haveItem = true
-    };
-    if (haveItem) {
-        let money = Math.floor((Math.random() * 10) + 1) * 100 // 100 - 1000
-        let result = await cs.addMoney({
-            user: message.author,
-            guild: message.guild,
-            amount: money,
-            wheretoPutMoney: 'wallet'
-        });
-        if (result.error) {
-            console.log(result)
-            return message.channel.send("Unknown error occured see console.")
-        } else return message.channel.send("You've used " + item + " and earned $" + money)
+   let item = args[0];
+   if (!item) return message.channel.send("What item you wana use?")
+   const arr = await cs.getUserItems({
+       user: message.author
+   })
+   for (i in arr.inventory) {
+       if (arr.inventory[i].name.toLowerCase().includes(item.toLowerCase())) {
+           const money = Math.floor((Math.random() * 10) + 1) * 100 // 100 - 1000
+           i++
+           const removeItem = await cs.removeUserItem({
+               user: message.author,
+               item: i
+           });
+           if (removeItem.error) {
+               console.log(removeItem)
+               console.log('Bot tried to remove item number ' + i)
+               return message.channel.send("Unknown error occured see console.")
+           }
+           const result = await cs.addMoney({
+               user: message.author,
+               amount: money,
+               wheretoPutMoney: 'wallet'
+           });
+           if (result.error) {
+               console.log(result)
+               return message.channel.send("Unknown error occured see console.")
+           } else return message.channel.send("You've used " + item + " to play games and earned " + money)
 
-    } else return message.channel.send("buy it first")
+       } else return message.channel.send("buy it")
+   };
 ```
 [`Click me to view Example Bot`](https://github.com/BIntelligent/currency-system/tree/main/ExampleBot) <br><br>
 <!-- 

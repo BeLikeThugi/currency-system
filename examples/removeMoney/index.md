@@ -5,11 +5,11 @@ const CurrencySystem = require("currency-system");
 const cs = new CurrencySystem;
 // Method:
  cs.removeMoney({
-            user: user, // User
-            guild: message.guild, // Guild
-            amount: '100', //  amount of money
-            wheretoPutMoney: 'bank' // or 'wallet'
-            });
+     user: user, // User
+     guild: message.guild, // Guild
+     amount: '100', //  amount of money
+     wheretoPutMoney: 'bank' // or 'wallet'
+ });
 ```
 ## Example
 ```js
@@ -28,11 +28,10 @@ const cs = new CurrencySystem;
     let wheretoPutMoney = args[2] || "wallet"; //or bank
     let amount = args[1];
     if (!amount) return message.channel.send("Enter amount of money to Remove.");
-    let money = parseInt(amount);
     let result = await cs.removeMoney({
         user: user,
         guild: message.guild,
-        amount: money,
+        amount: amount,
         wheretoPutMoney: wheretoPutMoney
     });
     if (result.error) return message.channel.send("You cant Remove negitive money");

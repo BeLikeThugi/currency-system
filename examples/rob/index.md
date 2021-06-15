@@ -12,7 +12,7 @@ cs.rob({
         successPercentage: 5, // every 100 robs 5 will be sucessful
         replies: ['Programmer', 'Builder', 'Waiter', 'Busboy', 'Chief', 'Mechanic'], // replies
         cooldown: 25 //25 seconds,
-
+        maxRob: 1000 // max amount a user can rob , it cant be less than 1000
     });
 ```
 ## Example
@@ -34,7 +34,8 @@ let user;
             guild: message.guild,
             minAmount: 100,
             successPercentage: 5,
-            cooldown: 25 //25 seconds
+            cooldown: 25, //25 seconds,
+            maxRob: 1000
         });
         if (result.error) {
             if (result.type === 'time') return message.channel.send(`You have already robbed recently Try again in ${result.time}`);
