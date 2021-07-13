@@ -71,3 +71,5 @@ Click them to view more info about the methods.
 [`buy`](https://bintelligent.github.io/currency-system/examples/buy)
 26. Sell Command for User's to Sell items.
 [`removeUserItem`](https://bintelligent.github.io/currency-system/examples/removeUserItem)
+27. This tell's the about a user on what command he used already.
+[`info`](https://bintelligent.github.io/currency-system/examples/info)
