@@ -43,7 +43,7 @@ cs.transferMoney({
         else message.channel.send(`**${message.author.username}**, Successfully transfered **${result.money}** to **${result.user2.username}**`)
 
 ```
-[`Click me to view Example Bot`](https://github.com/BIntelligent/currency-system/tree/main/ExampleBot) <br><br>
+[`Click me to view Example Bot`](https://github.com/BIntelligent/currency-system/tree/main/v12-ExampleBot) <br><br>
 <a href="https://bintelligent.github.io/currency-system/examples/balance" class="button"><- Back</a>
 <a href="https://bintelligent.github.io/currency-system/examples/leaderboard" class="button">Next -></a> <br><br><br>
 <style>

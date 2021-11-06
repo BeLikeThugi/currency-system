@@ -21,7 +21,7 @@ cs.removeItem({
         if (result.type == 'Unknown-Item') return message.channel.send('There was a error, The Item Does not exist!')
     } else message.channel.send('Done! Successfully removed the `' + result.inventory.name + '` from shop!')
 ```
-[`Click me to view Example Bot`](https://github.com/BIntelligent/currency-system/tree/main/ExampleBot) <br><br>
+[`Click me to view Example Bot`](https://github.com/BIntelligent/currency-system/tree/main/v12-ExampleBot) <br><br>
 <a href="https://bintelligent.github.io/currency-system/examples/addItem" class="button"><- Back</a>
 <a href="https://bintelligent.github.io/currency-system/examples/setItems" class="button">Next -></a> <br><br><br>
 <style>

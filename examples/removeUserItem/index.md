@@ -24,7 +24,7 @@ const cs = new CurrencySystem;
         if (result.type == 'Unknown-Item') return message.channel.send('There was a error, The Item Does not exist!')
     } else message.channel.send('Done! Successfully sold the `' + result.inventory.name + '` for free! You now have ' + result.inventory.amount + ' of those items left!')
 ```
-[`Click me to view Example Bot`](https://github.com/BIntelligent/currency-system/tree/main/ExampleBot) <br><br>
+[`Click me to view Example Bot`](https://github.com/BIntelligent/currency-system/tree/main/v12-ExampleBot) <br><br>
 <a href="https://bintelligent.github.io/currency-system/examples/buy" class="button"><- Back</a>
 <a href="https://bintelligent.github.io/currency-system/examples/info" class="button">Next -></a> <br><br><br>
 <style>

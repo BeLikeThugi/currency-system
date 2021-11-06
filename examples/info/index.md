@@ -30,7 +30,7 @@
         embed.addField('Commands That you can\'t use:', cantBeUsed || 'None');
     message.channel.send(embed)
 ```
-[`Click me to view Example Bot`](https://github.com/BIntelligent/currency-system/tree/main/ExampleBot) <br><br>
+[`Click me to view Example Bot`](https://github.com/BIntelligent/currency-system/tree/main/v12-ExampleBot) <br><br>
 <a href="https://bintelligent.github.io/currency-system/examples/removeUserItem" class="button"><- Back</a>
 <a href="https://bintelligent.github.io/currency-system/" class="button">Home</a> <br><br><br>
 <style>

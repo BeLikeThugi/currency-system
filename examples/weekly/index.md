@@ -23,7 +23,7 @@ let result = await cs.weekly({
     else message.channel.send(`You have earned $${result.amount}.`)
 }
 ```
-[`Click me to view Example Bot`](https://github.com/BIntelligent/currency-system/tree/main/ExampleBot) <br><br>
+[`Click me to view Example Bot`](https://github.com/BIntelligent/currency-system/tree/main/v12-ExampleBot) <br><br>
 <a href="https://bintelligent.github.io/currency-system/examples/hafly" class="button"><- Back</a>
 <a href="https://bintelligent.github.io/currency-system/examples/monthly" class="button">Next -></a> <br><br><br>
 <style>

@@ -33,7 +33,7 @@ const cs = new CurrencySystem;
             if (result.type === 'low-money') return message.channel.send(`**You don't have enough balance to buy this item!**`);
         } else return message.channel.send(`**Successfully bought  \`${result.inventory.name}\` for $${result.inventory.price}**`)
 ```
-[`Click me to view Example Bot`](https://github.com/BIntelligent/currency-system/tree/main/ExampleBot) <br><br>
+[`Click me to view Example Bot`](https://github.com/BIntelligent/currency-system/tree/main/v12-ExampleBot) <br><br>
 <a href="https://bintelligent.github.io/currency-system/examples/setItem" class="button"><- Back</a>
 <a href="https://bintelligent.github.io/currency-system/examples/removeUserItem" class="button">Next -></a> <br><br><br>
 <style>

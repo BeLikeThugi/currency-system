@@ -47,7 +47,7 @@ let user;
 
         }
 ```
-[`Click me to view Example Bot`](https://github.com/BIntelligent/currency-system/tree/main/ExampleBot) <br><br>
+[`Click me to view Example Bot`](https://github.com/BIntelligent/currency-system/tree/main/v12-ExampleBot) <br><br>
 <a href="https://bintelligent.github.io/currency-system/examples/work" class="button"><- Back</a>
 <a href="https://bintelligent.github.io/currency-system/examples/beg" class="button">Next -></a> <br><br><br>
 <style>

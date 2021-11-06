@@ -38,7 +38,7 @@ const cs = new CurrencySystem;
         if (result.error) return message.channel.send("You cant add negitive money");
         else message.channel.send(`Successfully added $${money} to ${user.username}, ( in ${wheretoPutMoney} )`)
 ```
-[`Click me to view Example Bot`](https://github.com/BIntelligent/currency-system/tree/main/ExampleBot) <br><br>
+[`Click me to view Example Bot`](https://github.com/BIntelligent/currency-system/tree/main/v12-ExampleBot) <br><br>
 <a href="https://bintelligent.github.io/currency-system/examples/setDefaultBankAmount" class="button"><- Back</a>
 <a href="https://bintelligent.github.io/currency-system/examples/removeMoney" class="button">Next -></a> <br><br><br>
 <style>

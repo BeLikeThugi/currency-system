@@ -23,7 +23,7 @@ cs.beg({
     if (result.error) return message.channel.send(`You have begged recently Try again in ${result.time}`);
     else message.channel.send(`You have earned $${result.amount}.`)
 ```
-[`Click me to view Example Bot`](https://github.com/BIntelligent/currency-system/tree/main/ExampleBot) <br><br>
+[`Click me to view Example Bot`](https://github.com/BIntelligent/currency-system/tree/main/v12-ExampleBot) <br><br>
 <a href="https://bintelligent.github.io/currency-system/examples/rob" class="button"><- Back</a>
 <a href="https://bintelligent.github.io/currency-system/examples/getUserItems" class="button">Next -></a> <br><br><br>
 <style>

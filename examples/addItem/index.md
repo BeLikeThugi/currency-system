@@ -37,7 +37,7 @@ message.channel.send('What should be item name?');
         if (result.type == 'No-Inventory') return message.channel.send('There was a error, No data recieved!')
     } else message.channel.send('Done! Successfully added `' + Name.first().content + '` to the shop!')
 ```
-[`Click me to view Example Bot`](https://github.com/BIntelligent/currency-system/tree/main/ExampleBot) <br><br>
+[`Click me to view Example Bot`](https://github.com/BIntelligent/currency-system/tree/main/v12-ExampleBot) <br><br>
 <a href="https://bintelligent.github.io/currency-system/examples/getShopItems" class="button"><- Back</a>
 <a href="https://bintelligent.github.io/currency-system/examples/removeItem" class="button">Next -></a> <br><br><br>
 <style>

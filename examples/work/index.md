@@ -26,7 +26,7 @@ cs.work({
         if (result.error) return message.channel.send(`You have already worked recently Try again in ${result.time}`);
         else message.channel.send(`You worked as a ${result.workType} and earned $${result.amount}.`)
 ```
-[`Click me to view Example Bot`](https://github.com/BIntelligent/currency-system/tree/main/ExampleBot) <br><br>
+[`Click me to view Example Bot`](https://github.com/BIntelligent/currency-system/tree/main/v12-ExampleBot) <br><br>
 <a href="https://bintelligent.github.io/currency-system/examples/monthly" class="button"><- Back</a>
 <a href="https://bintelligent.github.io/currency-system/examples/rob" class="button">Next -></a> <br><br><br>
 <style>
