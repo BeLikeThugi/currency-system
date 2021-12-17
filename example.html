@@ -1,0 +1,975 @@
+<!doctype html>
+<html>
+
+  <head>
+    <link rel="icon"
+      href="https://cdn.discordapp.com/attachments/884119662097498163/919820471434883082/image-removebg-preview.png">
+  
+    <html lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Methods</title>
+    <script src="https://kit.fontawesome.com/36d3d7529a.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+  
+    <head>
+      <link rel="stylesheet" href="https://highlightjs.org/static/demo/styles/github-dark-dimmed.css">
+    </head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+<center>
+
+  <body class="bg-gray-900">
+    <h1 class="text-3xl text-5xl text px-10 py-4 white-gray">
+      Examples
+    </h1>
+    <h3 class="text-2 text-2xl px-10 py-2 text-white">currency-system <span
+        class="bg-gradient-to-r from-red-500 via-red-500 to-pink-600 rounded px-1 py-1">examples</span></h3>
+    <div class="py-4 px-4">
+      <a href="index.html" class="btn success px-2 py-2 rounded">Home</a>
+    </div>
+</center>
+
+<!-- Initialize NPM Package -->
+
+<body>
+  <script src="index.js" defer></script>
+  <div class="px-20 py-10">
+    <span
+      class="text-white text-2 text-4xl bg-gradient-to-r from-red-500 via-red-500 to-pink-600 rounded px-1 py-1 shadow-md">Initilize
+      the NPM Package</span>
+    <div class="py-5">
+      <span class="text-gray-500 text-3 text-2xl">1. Set's MongoDB URL so It can Connect to MongoDB.</span> <button
+        class="collapsible text-3 px-2 rounded">setMongoURL</button>
+      <div class="content">
+        <!-- <p class="font-text-3">Put this in Index.js</p> -->
+        <pre><code class="language-js rounded">    //Require these at top of index.js
+    const CurrencySystem = require("currency-system");
+    const cs = new CurrencySystem;
+    // Method:
+    cs.setMongoURL('MongoURL Here');</code></pre>
+      </div>
+      <div class="py-5">
+        <span class="text-gray-500 text-3 text-2xl">2. ( optional ) Set's Default Wallet Amount when creating a new User.</span> <button class="collapsible text-3 px-2 rounded">setDefaultWalletAmount</button>
+        <div class="content">
+          <!-- <p class="font-text-3">Put this in Index.js</p> -->
+          <pre><code class="language-js rounded">    const CurrencySystem = require("currency-system");
+    const cs = new CurrencySystem;
+    // Method:
+    cs.setDefaultWalletAmount('100') // $100 will be the default wallet money when a new User is created.</code></pre>
+        </div>
+
+        <div class="py-5">
+          <span class="text-gray-500 text-3 text-2xl">3. ( optional ) Set's Default Bank Amount when creating a new User.</span> <button class="collapsible text-3 px-2 rounded">setDefaultBankAmount</button>
+          <div class="content">
+            <!-- <p class="font-text-3">Put this in Index.js</p> -->
+            <pre><code class="language-js rounded">      const CurrencySystem = require("currency-system");
+      const cs = new CurrencySystem;
+      // Method:
+      cs.setDefaultBankAmount('100') // $100 will be the default Bank money when a new User is created.</code></pre>
+          </div>
+
+          <div class="py-5">
+            <span class="text-gray-500 text-3 text-2xl">4. ( optional ) Set's Default Wallet Amount when creating a new User Document.</span> <button class="collapsible text-3 px-2 rounded">setMaxWalletAmount</button>
+            <div class="content">
+              <!-- <p class="font-text-3">Put this in Index.js</p> -->
+              <pre><code class="language-js rounded">      const CurrencySystem = require("currency-system");
+      const cs = new CurrencySystem;
+      // Method:
+      cs.setMaxWalletAmount('10000') // $10,000 will be the Maximum amount of money a user can have in there wallet!</code></pre>
+            </div>
+            <div class="py-5">
+              <span class="text-gray-500 text-3 text-2xl">5. ( optional ) Set's Maximum Bank Amount limit of all
+                users.</span> <button class="collapsible text-3 px-2 rounded">setDefaultBankAmount</button>
+              <div class="content">
+                <!-- <p class="font-text-3">Put this in Index.js</p> -->
+                <pre><code class="language-js rounded">      const CurrencySystem = require("currency-system");
+      const cs = new CurrencySystem;
+      // Method:
+      cs.setMaxBankAmount('10000') // $10,000 will be the  Maximum amount of money a user can have in there bank!</code></pre>
+              </div>
+              <div class="py-5">
+                <span class="text-gray-500 text-3 text-2xl">6. ( optional ) Check for new updates for the
+                  package!</span> <button class="collapsible text-3 px-2 rounded">searchForNewUpdate</button>
+                <div class="content">
+                  <!-- <p class="font-text-3">Put this in Index.js</p> -->
+                  <pre><code class="language-js rounded">      const CurrencySystem = require("currency-system");
+      const cs = new CurrencySystem;
+      // Method:
+      cs.searchForNewUpdate(true) // It'll console log if there's a new update.</code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Initialize NPM Package END -->
+
+    <!-- Economy Methods -->
+
+    <!-- 1 -->
+
+    <span
+      class="text-white text-2 text-4xl bg-gradient-to-r from-red-500 via-red-500 to-pink-600 rounded px-1 py-1 shadow-md">Economy
+      Methods</span>
+    <div class="py-5">
+      <span class="text-gray-500 text-3 text-2xl">1. Add's Money to a User.</span> <button
+        class="collapsible text-3 px-2 rounded">addMoney</button>
+      <div class="content">
+        <!-- <p class="font-text-3">cs.addMoney()</p> -->
+        <pre><code class="language-js rounded">      // Requiring the Package
+      const CurrencySystem = require("currency-system");
+      const cs = new CurrencySystem;
+      // Method:
+      const money = 1000;
+      const wheretoPutMoney = 'wallet'; // Or bank
+      let result = await cs.addMoney({
+        user: 'UserID',
+        guild: 'GuildID',
+        amount: money,
+        wheretoPutMoney: wheretoPutMoney
+      });
+      if (result.error) return message.reply("You cant add negitive money");
+      else message.reply(`Successfully added $${money} to ${message.author.username}, ( in ${wheretoPutMoney} )`)</code></pre>
+      </div>
+
+      <!-- 2 -->
+
+      <span class="text-gray-500 text-3 text-2xl">2. Remove's Money from a User.</span> <button
+        class="collapsible text-3 px-2 rounded">removeMoney</button>
+      <div class="content">
+        <!-- <p class="font-text-3">cs.removeMoney()</p> -->
+        <pre><code class="language-js rounded">      // Requiring the Package
+      const CurrencySystem = require("currency-system");
+      const cs = new CurrencySystem;
+      // Method:
+      const money = 1000;
+      const wheretoPutMoney = 'wallet'; // Or bank
+      let result = await cs.removeMoney({
+        user: 'userID',
+        guild: 'guildID',
+        amount: money,
+        wheretoPutMoney: wheretoPutMoney
+      });
+      if (result.error) return message.reply("You cant remove negitive money");
+      else message.reply(`Successfully removed $${money} to ${message.author.username}, ( from ${wheretoPutMoney} )`)</code></pre>
+      </div>
+      <!-- 3 -->
+
+      <span class="text-gray-500 text-3 text-2xl">3. Gamble's the money for a user with some success of winning double
+        money than you Gambled for.</span> <button class="collapsible text-3 px-2 rounded">gamble</button>
+      <div class="content">
+        <!-- <p class="font-text-3">cs.gamble()</p> -->
+        <pre><code class="language-js rounded">      // Requiring the Package
+      const CurrencySystem = require("currency-system");
+      const cs = new CurrencySystem;
+      // Method:
+      let money = args[0].value
+      if (isNaN(money)) return message.reply("Amount is not a number.");
+      let result = await cs.gamble({
+        user: 'userID',
+        guild: 'guildID',
+        amount: money,
+        minAmount: 1,
+        cooldown: 25 //25 seconds
+      });
+      if (result.error) {
+        if (result.type == 'amount') return message.reply("Please insert an amount first.");
+        if (result.type == 'nan') return message.reply("The amount was not a number.");
+        if (result.type == 'low-money') return message.reply(`You don't have enough money. You need ${result.neededMoney}$ more to perform the action. `);
+        if (result.type == 'gamble-limit') return message.reply(`You don't have enough money for gambling. The minimum was $${result.minAmount}.`);
+        if (result.type == 'time') return message.reply(`Wooo that is too fast. You need to wait **${result.second}** second(s) before you can gamble again.`);
+      } else {
+        if (result.type == 'lost') return message.reply(`Ahh, no. You lose $${result.amount}. You've $${result.wallet} left. Good luck next time.`);
+        if (result.type == 'won') return message.reply(`Woohoo! You won $${result.amount}! You've $${result.wallet}. Good luck, have fun!`);
+      }</code></pre>
+      </div>
+
+      <!-- 4 -->
+
+      <span class="text-gray-500 text-3 text-2xl">4. Add's money from wallet to bank.</span> <button
+        class="collapsible text-3 px-2 rounded">deposite</button>
+      <div class="content">
+        <!-- <p class="font-text-3">cs.deposite()</p> -->
+        <pre><code class="language-js rounded">      // Requiring the Package
+      const CurrencySystem = require("currency-system");
+      const cs = new CurrencySystem;
+      // Method:
+      let money = args[0].value
+      if (!money) return message.reply("Enter the amount you want to deposite.");
+      let result = await cs.deposite({
+        user: 'userID',
+        guild: 'guildID',
+        amount: money
+      });
+      if (result.error) {
+        if (result.type === 'money') return message.reply("Specify an amount to deposite");
+        if (result.type === 'negative-money') return message.reply("You can't deposite negative money");
+        if (result.type === 'low-money') return message.reply("You don't have that much money in wallet.");
+        if (result.type === 'no-money') return message.reply("You don't have any money to deposite");
+        if (result.type === 'bank-full') return message.reply("Your bank is full. It has reached it's limit.");
+      } else {
+        if (result.type === 'all-success') return message.reply("You have deposited all your money to your bank" + `\nNow you've $${result.rawData.wallet} In your wallet and $${result.rawData.bank} in your bank.`);
+        if (result.type === 'success') return message.reply(`You have deposited $${result.amount} money to your bank.\nNow you've $${result.rawData.wallet} In your wallet and $${result.rawData.bank} in your bank.`);
+      };</code></pre>
+      </div>
+
+      <!-- 5 -->
+
+      <span class="text-gray-500 text-3 text-2xl">5. Take's money from bank to wallet.</span> <button
+        class="collapsible text-3 px-2 rounded">withdraw</button>
+      <div class="content">
+        <!-- <p class="font-text-3">cs.withdraw()</p> -->
+        <pre><code class="language-js rounded">      // Requiring the Package
+      const CurrencySystem = require("currency-system");
+      const cs = new CurrencySystem;
+      // Method:
+      let money = args[0].value
+      if (!money) return message.reply("Enter the amount you want to withdraw.");
+      let result = await cs.withdraw({
+        user: 'userID',
+        guild: 'guildID',
+        amount: money
+      });
+      if (result.error) {
+        if (result.type === 'money') return message.reply("Specify an amount to withdraw")
+        if (result.type === 'negative-money') return message.reply("You can't withdraw negative money, please use deposit command")
+        if (result.type === 'low-money') return message.reply("You don't have that much money in bank.")
+        if (result.type === 'no-money') return message.reply("You don't have any money to withdraw")
+      } else {
+        if (result.type === 'all-success') return message.reply("You have withdraw'd all your money from your bank" + `\nNow you've $${result.rawData.wallet} In your wallet and $${result.rawData.bank} in your bank.`)
+        if (result.type === 'success') return message.reply(`You have withdraw $${result.amount} money from your bank.\nNow you've $${result.rawData.wallet} In your wallet and $${result.rawData.bank} in your bank.`)
+      };</code></pre>
+
+      </div>
+
+      <!-- 6 -->
+
+      <span class="text-gray-500 text-3 text-2xl">6. Gets current balance of user ( Bank and wallet ).</span> <button
+        class="collapsible text-3 px-2 rounded">balance</button>
+      <div class="content">
+        <!-- <p class="font-text-3">cs.balance()</p> -->
+        <pre><code class="language-js rounded">      // Requiring the Package
+      const CurrencySystem = require("currency-system");
+      const cs = new CurrencySystem;
+      // Method:
+      const user = message.options.getUser('user') || 'userID';
+      let result = await cs.balance({
+        user: user,
+        guild: 'guildID'.id
+      });
+      return message.reply(`${user.tag}, has $${(result.wallet).toLocaleString()} in there wallet and $${(result.bank).toLocaleString()} in there bank. There Max bank has been set to $${(result.rawData.bankSpace.toLocaleString())}`);</code></pre>
+
+      </div>
+
+      <!-- 7 -->
+
+      <span class="text-gray-500 text-3 text-2xl">7. Moves money from one user to another.</span> <button
+        class="collapsible text-3 px-2 rounded">transferMoney</button>
+      <div class="content">
+        <!-- <p class="font-text-3">cs.transferMoney()</p> -->
+        <pre><code class="language-js rounded">      // Requiring the Package
+      const CurrencySystem = require("currency-system");
+      const cs = new CurrencySystem;
+      // Method:
+      let user = message.options.getUser('user');
+      if (user.id === 'userID'.id) return message.channel.send(`You can't transfer money to yourself!`);
+      let amount = message.options.getInteger('amount');
+      if (!amount) return message.reply("Enter amount of money to add.");
+      if (amount.includes("-")) return message.reply("You can't send negitive money.")
+      let money = parseInt(amount);
+
+       let result = await cs.transferMoney({
+       user: 'userID',
+        user2: user,
+        guild: 'guildID',
+        amount: money
+       });
+       if (result.error) return message.reply(`You don't have enough money in your wallet.`);
+       else message.reply(`**${message.author.username}**, Successfully transfered **${result.money}** to **${result.user2.username}**`)</code></pre>
+
+      </div>
+
+      <!-- Economy Methods END -->
+
+
+      <!-- Leaderboard -->
+      <div class="py-10">
+        <span
+          class="text-white text-2 text-4xl py-4 bg-gradient-to-r from-red-500 via-red-500 to-pink-600 rounded px-1 py-1 shadow-md">Leaderboards</span>
+        <div class="py-5">
+          <span class="text-gray-500 text-3 text-2xl">1. Gets Guild's leaderboard.</span> <button
+            class="collapsible text-3 px-2 rounded">leaderboard</button>
+          <div class="content">
+            <!-- <p class="font-text-3">cs.leaderboard()</p> -->
+            <pre><code class="language-js rounded">      // Requiring the Package
+      const CurrencySystem = require("currency-system");
+      const cs = new CurrencySystem;
+      // Method:
+      let data = await cs.leaderboard('guildID');
+      if (data.length < 1) return message.reply("Nobody's in leaderboard yet.");
+      const msg = new Discord.MessageEmbed();
+      let pos = 0;
+      // This is to get First 10 Users :)
+      data.slice(0, 10).map(e => {
+        if (!client.users.cache.get(e.userID)) return;
+        pos++
+        msg.addField(`${pos} - **${client.users.cache.get(e.userID).username}**`, `Wallet: **${e.wallet}** - Bank: **${e.bank}**`, true);
+      });
+  
+      message.reply({
+          embeds: [msg]
+      }).catch();</code></pre>
+
+          </div>
+
+          <!-- 2 -->
+
+          <span class="text-gray-500 text-3 text-2xl">2. Gets Global leaderboard.</span> <button
+            class="collapsible text-3 px-2 rounded">globalLeaderboard</button>
+          <div class="content">
+            <!-- <p class="font-text-3">cs.globalLeaderboard()</p> -->
+            <pre><code class="language-js rounded">      // Requiring the Package
+      const CurrencySystem = require("currency-system");
+      const cs = new CurrencySystem;
+      // Method:
+      let data = await cs.globalLeaderboard();
+      if (data.length < 1) return message.reply("Nobody's in Global leaderboard yet.");
+      const msg = new Discord.MessageEmbed();
+      let pos = 0;
+      // This is to get First 10 Users )
+      data.slice(0, 10).map(e => {
+        if (!client.users.cache.get(e.userID)) return;
+        pos++
+        msg.addField(`${pos} - **${client.users.cache.get(e.userID).username}**`, `Wallet: **${e.wallet}** - Bank: **${e.bank}**`, true);
+      });
+  
+      message.reply({
+        embeds: [msg]
+      }).catch(); </code></pre>
+
+          </div>
+
+          <!-- Leaderboard END -->
+
+          <!-- Money earning methods -->
+
+          <div class="py-10">
+            <span
+              class="text-white text-2 text-4xl py-4 bg-gradient-to-r from-red-500 via-red-500 to-pink-600 rounded px-1 py-1 shadow-md">Money
+              Earning Methods</span>
+            <div class="py-5">
+              <span class="text-gray-500 text-3 text-2xl">1. User can use it once per hour.</span> <button
+                class="collapsible text-3 px-2 rounded">hourly</button>
+              <div class="content">
+                <!-- <p class="font-text-3">cs.hourly()</p> -->
+                <pre><code class="language-js rounded">      // Requiring the Package
+      const CurrencySystem = require("currency-system");
+      const cs = new CurrencySystem;
+      // Method:
+      let result = await cs.hourly({
+        user: 'UserID',
+        guild: 'guildID',
+        amount: 100,
+      });
+      if (result.error) return message.reply(`You have used hourly recently Try again in ${result.time}`);
+      else return message.reply(`You have earned $${result.amount}. Your streak is now ${result.rawData.streak.hourly}`);
+</code></pre>
+
+              </div>
+
+              <!-- 2 -->
+
+              <span class="text-gray-500 text-3 text-2xl">2. User can use it once every 6 hours.</span> <button
+                class="collapsible text-3 px-2 rounded">quaterly</button>
+              <div class="content">
+                <!-- <p class="font-text-3">cs.quaterly()</p> -->
+                <pre><code class="language-js rounded">      // Requiring the Package
+      const CurrencySystem = require("currency-system");
+      const cs = new CurrencySystem;
+      // Method:
+      let result = await cs.quaterly({
+        user: 'userID',
+        guild: 'guildID',
+        amount: 100,
+      });
+      if (result.error) return message.reply(`You have used quaterly recently Try again in ${result.time}`);
+      else message.reply(`You have earned $${result.amount}. Your streak is now ${result.rawData.streak.quaterly}`);</code></pre>
+              </div>
+
+              <!-- 3 -->
+
+              <span class="text-gray-500 text-3 text-2xl">3. User can use it once every 12 hours.</span> <button
+                class="collapsible text-3 px-2 rounded">hafly</button>
+              <div class="content">
+                <!-- <p class="font-text-3">cs.hafly()</p> -->
+                <pre><code class="language-js rounded">      // Requiring the Package
+      const CurrencySystem = require("currency-system");
+      const cs = new CurrencySystem;
+      // Method:
+      let result = await cs.hafly({
+        user: 'userID',
+        guild: 'guildID',
+        amount: 100,
+      });
+      if (result.error) return message.reply(`You have used hafly recently Try again in ${result.time}`);
+      else return message.reply(`You have earned $${result.amount}. Your streak is now ${result.rawData.streak.hafly}`);</code></pre>
+              </div>
+
+              <!-- 4 -->
+
+              <span class="text-gray-500 text-3 text-2xl">4. User can use it once every 24 hours.</span> <button
+                class="collapsible text-3 px-2 rounded">daily</button>
+              <div class="content">
+                <!-- <p class="font-text-3">cs.daily()</p> -->
+                <pre><code class="language-js rounded">      // Requiring the Package
+        const CurrencySystem = require("currency-system");
+        const cs = new CurrencySystem;
+        // Method:
+        let result = await cs.daily({
+          user: 'userID',
+          guild: 'guildID',
+          amount: 100,
+        });
+        if (result.error) return message.reply(`You have used daily recently Try again in ${result.time}`);
+        else message.reply(`You have earned $${result.amount}. Your streak is now ${result.rawData.streak.daily}`);</code></pre>
+              </div>
+
+              <!-- 5 -->
+
+              <span class="text-gray-500 text-3 text-2xl">5. User can use it once every 7 days.</span> <button
+                class="collapsible text-3 px-2 rounded">weekly</button>
+              <div class="content">
+                <!-- <p class="font-text-3">cs.weekly()</p> -->
+                <pre><code class="language-js rounded">      // Requiring the Package
+      const CurrencySystem = require("currency-system");
+      const cs = new CurrencySystem;
+      // Method:
+      let result = await cs.weekly({
+        user: 'userID',
+        guild: 'guildID',
+        amount: 100,
+      });
+      if (result.error) return message.reply(`You have used weekly recently Try again in ${result.time}`);
+      else message.reply(`You have earned $${result.amount}. Your streak is now ${result.rawData.streak.weekly}`);</code></pre>
+              </div>
+
+              <!-- 6 -->
+
+              <span class="text-gray-500 text-3 text-2xl">6. User can use it once every month.</span> <button
+                class="collapsible text-3 px-2 rounded">monthly</button>
+              <div class="content">
+                <!-- <p class="font-text-3">cs.monthly()</p> -->
+                <pre><code class="language-js rounded">      // Requiring the Package
+      const CurrencySystem = require("currency-system");
+      const cs = new CurrencySystem;
+      // Method:
+      let result = await cs.monthly({
+        user: 'userID',
+        guild: 'guildID',
+        amount: 6000,
+      });
+      if (result.error) return message.reply(`You have used monthly recently Try again in ${result.time}`);
+      else message.reply(`You have earned $${result.amount}. Your streak is now ${result.rawData.streak.monthly}`);</code></pre>
+              </div>
+
+              <!-- 7 -->
+              <span class="text-gray-500 text-3 text-2xl">7. User can use it once every year.</span> <button
+                class="collapsible text-3 px-2 rounded">yearly</button>
+              <div class="content">
+                <!-- <p class="font-text-3">cs.yearly()</p> -->
+                <pre><code class="language-js rounded">      // Requiring the Package
+      const CurrencySystem = require("currency-system");
+      const cs = new CurrencySystem;
+      // Method:
+      let result = await cs.yearly({
+        user: 'userID',
+        guild: 'guildID',
+        amount: 6000,
+      });
+      if (result.error) return message.reply(`You have used yearly recently Try again in ${result.time}`);
+      else message.reply(`You have earned $${result.amount}. Your streak is now ${result.rawData.streak.yearly}`);</code></pre>
+              </div>
+              <!-- 8 -->
+              <span class="text-gray-500 text-3 text-2xl">7. User can use it every x time. Which <span
+                  class="bg-gradient-to-r from-red-500 via-red-500 to-pink-600 rounded px-1 text-white">Bot
+                  Developor</span> can set.</span> <button class="collapsible text-3 px-2 rounded">work</button>
+              <div class="content">
+                <!-- <p class="font-text-3">cs.work()</p> -->
+                <pre><code class="language-js rounded">      // Requiring the Package
+      const CurrencySystem = require("currency-system");
+      const cs = new CurrencySystem;
+      // Method:
+      let result = await cs.work({
+        user: 'userID',
+        guild: 'guildID',
+        maxAmount: 100,
+        replies: ['Programmer', 'Builder', 'Waiter', 'Busboy', 'Chief', 'Mechanic'],
+        cooldown: 25 //25 seconds
+      });
+      if (result.error) return message.reply(`You have already worked recently Try again in ${result.time}`);
+      else message.reply(`You worked as a ${result.workType} and earned $${result.amount}.`)</code></pre>
+
+              </div>
+
+              <!-- 8 -->
+
+              <span class="text-gray-500 text-3 text-2xl">8. Rob's a user and have 50-50 chance of getting his
+                money.</span>
+              <button class="collapsible text-3 px-2 rounded">rob</button>
+              <div class="content">
+                <!-- <p class="font-text-3">cs.rob()</p> -->
+                <pre><code class="language-js rounded">      // Requiring the Package
+      const CurrencySystem = require("currency-system");
+      const cs = new CurrencySystem;
+      // Method:
+      let user = args[0].user
+      if (user.bot || user === client.user) return message.reply("This user is a bot.");
+      if (!user) return message.reply('Sorry, you forgot to mention somebody.');
+
+      let result = await cs.rob({
+        user: 'userID',
+        user2: user,
+        guild: 'guildID',
+        minAmount: 100,
+        successPercentage: 5,
+        cooldown: 25, //25 seconds,
+        maxRob: 1000
+      });
+      if (result.error) {
+        if (result.type === 'time') return message.reply(`You have already robbed recently Try again in ${result.time}`);
+        if (result.type === 'low-money') return message.reply(`You need atleast $${result.minAmount} to rob somebody.`);
+        if (result.type === 'low-wallet') return message.reply(`${result.user2.username} have less than $${result.minAmount} to rob.`)
+        if (result.type === 'caught') return message.reply(`${'userID'.username} you robbed ${result.user2.username} and got caught and you payed ${result.amount} to ${result.user2.username}!`)
+      } else {
+          if (result.type === 'success') return message.reply(`${'userID'.username} you robbed ${result.user2.username} and got away with ${result.amount}!`)
+      }</code></pre>
+
+              </div>
+
+              <!-- 9 -->
+
+              <span class="text-gray-500 text-3 text-2xl">9. User can use it every x time. Which
+                <span class="bg-gradient-to-r from-red-500 via-red-500 to-pink-600 rounded px-1 text-white">Bot
+                  Developor</span> can set.</span> <button class="collapsible text-3 px-2 rounded">beg</button>
+              <div class="content">
+                <!-- <p class="font-text-3">cs.beg()</p> -->
+                <pre><code class="language-js rounded">      // Requiring the Package
+      const CurrencySystem = require("currency-system");
+      const cs = new CurrencySystem;
+      // Method:
+      let result = await cs.beg({
+       user: 'userID',
+       guild: 'guildID',
+       minAmount: 100,
+       maxAmount: 400
+      });
+      if (result.error) return message.reply(`You have begged recently Try again in ${result.time}`);
+      else message.reply(`You have earned $${result.amount}.`)</code></pre>
+
+              </div>
+
+              <!-- Money earning methods END -->
+
+              <!-- Latest -->
+              <center>
+                <div class="py-10">
+                  <span
+                    class="text-white text-2 text-5xl py-4 bg-gradient-to-r from-green-500 via-green-500 to-green-600 rounded px-2 py-2 shadow-lg">Latest!!</span>
+                </div>
+              </center>
+              <!-- Latest END -->
+
+              <!-- Inventory System -->
+
+              <div class="py-10">
+                <span
+                  class="text-white text-2 text-4xl py-4 bg-gradient-to-r from-red-500 via-red-500 to-pink-600 rounded px-1 py-1 shadow-md">Inventory
+                  System</span> <!-- <span class="label success-label rounded">New</span> -->
+                <div class="py-5">
+
+                  <span class="text-gray-500 text-3 text-2xl">1. Get User's Inventory.</span> <button
+                    class="collapsible text-3 px-2 rounded">getUserItems</button>
+                  <div class="content">
+                    <!-- <p class="font-text-3">cs.getUserItems()</p> -->
+                    <pre><code class="language-js rounded">      // Requiring the Package
+      const CurrencySystem = require("currency-system");
+      const cs = new CurrencySystem;
+      // Method:
+      const user = message.options.getUser('user') || 'userID';
+      let result = await cs.getUserItems({
+        user: user,
+        guild: 'guildID',
+      });
+      let inv = result.inventory.slice(0, 10)
+      const embed = new Discord.MessageEmbed()
+        .setDescription('Your Inventory in Empty!')
+      for (key of inv) {
+        embed.addField(`**${key.name}:**`, `Amount: ${key.amount}`);
+        embed.setDescription('Your Inventory!')
+      };
+      return message.reply({
+        embeds: [embed]
+      })</code></pre>
+
+                  </div>
+
+                  <!-- 2 -->
+
+                  <span class="text-gray-500 text-3 text-2xl">2. Get Shop's Inventory.</span> <button
+                    class="collapsible text-3 px-2 rounded">getShopItems</button>
+                  <div class="content">
+                    <!-- <p class="font-text-3">cs.getShopItems()</p> -->
+                    <pre><code class="language-js rounded">      // Requiring the Package
+      const CurrencySystem = require("currency-system");
+      const cs = new CurrencySystem;
+      // Method:
+      let result = await cs.getShopItems({
+        guild: 'guildID'
+      });
+      let inv = result.inventory;
+      const embed = new Discord.MessageEmbed()
+        .setDescription('Shop!')
+      for (let key in inv) {
+        embed.addField(`${parseInt(key) + 1} - Price: $${inv[key].price} - **${inv[key].name}:**`, inv[key].description)
+      }
+      message.reply({
+        embeds: [embed]
+      })</code></pre>
+
+                  </div>
+
+                  <!-- 3 -->
+
+                  <span class="text-gray-500 text-3 text-2xl">3. Add Item's to Shop!!</span> <button
+                    class="collapsible text-3 px-2 rounded">addItem</button>
+                  <div class="content">
+                    <!-- <p class="font-text-3">cs.addItem()</p> -->
+                    <pre><code class="language-js rounded">      // Requiring the Package
+      const CurrencySystem = require("currency-system");
+      const cs = new CurrencySystem;
+      // Method:
+      if (message.options.getInteger('price') < 1) return message.channel.send("You can't add an item for less than 1$!");
+      let result = await cs.addItem({
+        guild: 'guildID',
+        inventory: {
+          name: message.options.getString('name'),
+          price: message.options.getInteger('price'),
+          description: message.options.getString('description')
+        }
+      });
+      if (result.error) {
+        if (result.type == 'No-Inventory-Name') return message.channel.send('There was a error, Please enter item name to removadd.!')
+        if (result.type == 'Invalid-Inventory-Price') return message.channel.send('There was a error, invalid price!')
+        if (result.type == 'No-Inventory-Price') return message.channel.send('There was a error, You didnt specify price!')
+        if (result.type == 'No-Inventory') return message.channel.send('There was a error, No data recieved!')
+      } else return message.channel.send('Done! Successfully added `' + message.options.getString('name') + '` to the shop!')</code></pre>
+
+                  </div>
+
+                  <!-- 4 -->
+
+                  <span class="text-gray-500 text-3 text-2xl">4. Removes Item's to Shop!!</span> <button
+                    class="collapsible text-3 px-2 rounded">removeItem</button>
+                  <div class="content">
+                    <!-- <p class="font-text-3">cs.removeItem()</p> -->
+                    <pre><code class="language-js rounded">      // Requiring the Package
+      const CurrencySystem = require("currency-system");
+      const cs = new CurrencySystem;
+      // Method:
+      if (!args[0].value) return message.reply('Which item to remove?')
+      let result = await cs.removeItem({
+        guild: 'guildID',
+        item: parseInt(args[0].value)
+      });
+      if (result.error) {
+        if (result.type == 'Invalid-Item-Number') return message.reply('There was a error, Please enter item number to remove.!')
+        if (result.type == 'Unknown-Item') return message.reply('There was a error, The Item Does not exist!')
+      } else message.reply('Done! Successfully removed the `' + result.inventory.name + '` from shop!')</code></pre>
+
+                  </div>
+
+                  <!-- 5 -->
+
+                  <span class="text-gray-500 text-3 text-2xl">5. Set's Item's on Shop at once without doing it one by
+                    one.</span> <button class="collapsible text-3 px-2 rounded">setItems</button>
+                  <div class="content">
+                    <!-- <p class="font-text-3">cs.setItems()</p> -->
+                    <pre><code class="language-js rounded">      // Requiring the Package
+      const CurrencySystem = require("currency-system");
+      const cs = new CurrencySystem;
+      // Method:
+      cs.setItems({
+        guild: 'guildID', // guild, remove this line to make it global
+        shop: [{
+          name: 'Watch',
+          price: 20
+        }, {
+            name: 'Rolex',
+            price: 1230
+          }]
+      }).then(console.log)</code></pre>
+                  </div>
+
+                  <!-- 6 -->
+
+                  <span class="text-gray-500 text-3 text-2xl">6. addUserItem Command for User's to buy items from
+                    Shop.</span> <button class="collapsible text-3 px-2 rounded">addUserItem</button>
+                  <div class="content">
+                    <!-- <p class="font-text-3">cs.addUserItem()</p> -->
+                    <pre><code class="language-js rounded">      // Requiring the Package
+      const CurrencySystem = require("currency-system");
+      const cs = new CurrencySystem;
+      // Method:
+      let thing = args[0].value
+      if (!thing) return message.reply('Please provide item number')
+      if (isNaN(thing)) return message.reply('Please provide valid item number')
+      let result = await cs.addUserItem({
+        user: 'userID',
+        guild: 'guildID',
+        item: parseInt(args[0].value)
+      });
+      if (result.error) {
+        if (result.type === 'No-Item') return message.reply('Please provide valid item number');
+        if (result.type === 'Invalid-Item') return message.reply('item does not exists');
+        if (result.type === 'low-money') return message.reply(`**You don't have enough balance to buy this item!**`);
+      } else return message.reply(`**Successfully bought  \`${result.inventory.name}\` for $${result.inventory.price}**`)</code></pre>
+
+                  </div>
+
+                  <!-- 7 -->
+
+                  <span class="text-gray-500 text-3 text-2xl">7. Sell Command for User's to Sell items.</span> <button
+                    class="collapsible text-3 px-2 rounded">removeUserItem</button>
+                  <div class="content">
+                    <!-- <p class="font-text-3">cs.removeUserItem()</p> -->
+                    <pre><code class="language-js rounded">      // Requiring the Package
+      const CurrencySystem = require("currency-system");
+      const cs = new CurrencySystem;
+      // Method:
+      if (!args[0].value) return message.reply('Which item to remove?')
+       let result = await cs.removeUserItem({
+        user: 'userID',
+        guild: 'guildID',
+        item: parseInt(args[0].value)
+       });
+      if (result.error) {
+        if (result.type == 'Invalid-Item-Number') return message.reply('There was a error, Please enter item number to remove.!')
+        if (result.type == 'Unknown-Item') return message.reply('There was a error, The Item Does not exist!')
+      } else message.reply('Done! Successfully sold the `' + result.inventory.name + '` for free! You now have ' + result.inventory.amount + ' of those items left!')</code></pre>
+                    <p class="font-text-3">&nbsp&nbspYou can modify same example to make a 'use' command.</p>
+                    <pre><code class="language-js rounded">      // Requiring the Package
+      const CurrencySystem = require("currency-system");
+      const cs = new CurrencySystem;
+      // Method:
+      // !use < item name from your inventory>
+      let item = args[0].value;
+      if (!item) return message.reply("What item you wana use?")
+      if (parseInt(item)) return message.reply("Please use the name of the item, not the ID.")
+      let haveItem = false;
+      const arr = await cs.getUserItems({
+        user: 'userID',
+        guild: 'guildID',
+      });
+      let i;
+      for (key in arr.inventory) {
+        if (arr.inventory[key].name.toLowerCase().includes(item.toLowerCase())) haveItem = true
+        i = key;
+      };
+      if (haveItem) {
+        let money = Math.floor((Math.random() * 10) + 1) * 100 // 100 - 1000
+        let result = await cs.addMoney({
+          user: 'userID',
+          guild: 'guildID',
+          amount: money,
+          wheretoPutMoney: 'wallet'
+        });
+        await cs.removeUserItem({
+          user: 'userID',
+          guild: 'guildID',
+          item: i
+        });
+        if (result.error) {
+          console.log(result)
+          return message.reply("Unknown error occured see console.")
+        } else return message.reply("You've used " + item + " and earned $" + money)
+      } else return message.reply("Please buy the item first!")</code></pre>
+                  </div>
+
+                  <!-- 8 -->
+
+                  <span class="text-gray-500 text-3 text-2xl">8. This tell's the about a user on what command he used
+                    already.</span> <button class="collapsible text-3 px-2 rounded">info</button>
+                  <div class="content">
+                    <!-- <p class="font-text-3">cs.info()</p> -->
+                    <pre><code class="language-js rounded">      // Requiring the Package
+      const CurrencySystem = require("currency-system");
+      const cs = new CurrencySystem;
+      // Method:
+      let result = await cs.info('userID'.id, 'guildID'.id);
+      const embed = new Discord.MessageEmbed()
+        .setDescription('Info about ' + 'userID'.tag);
+      let unUsed = '';
+      let cantBeUsed = '';
+      for (const [key, value] of result.info) {
+        if (value.used) unUsed += `- ${key}\n`;
+        else cantBeUsed += `- ${key} ( ${value.timeLeft} )\n`;
+      }
+      embed.addField('Commands That you can use:', unUsed || 'None');
+      embed.addField('Commands That you can\'t use:', cantBeUsed || 'None');
+      message.reply({
+       embeds: [embed]
+      });</code></pre>
+
+                  </div>
+
+                  <!-- Inventory System END -->
+                </div>
+                <div class="py-10">
+                  <!-- start -->
+                  <span
+                    class="text-white text-2 text-4xl py-4 bg-gradient-to-r from-red-500 via-red-500 to-pink-600 rounded px-1 py-1 shadow-md">Miscellaneous
+                    Functions</span> <!-- <span class="label success-label rounded">New</span> -->
+                  <div class="py-5">
+
+                    <span class="text-gray-500 text-3 text-2xl">1. Get User's Raw Data.</span> <button
+                      class="collapsible text-3 px-2 rounded">findUser</button>
+                    <div class="content">
+                      <p class="font-text-3">&nbsp&nbspNote: It will auto create new user if it dosn't already exist.
+                      </p>
+                      <pre><code class="language-js rounded">      // Requiring the Package
+      const CurrencySystem = require("currency-system");
+      const cs = new CurrencySystem;
+      // Method:
+      let result = await cs.findUser({user: 'UserID', guild: 'guildID'});
+      console.log(result);</code></pre>
+
+                    </div>
+                    <span class="text-gray-500 text-3 text-2xl">2. Save User's Raw Data.</span> <button
+                      class="collapsible text-3 px-2 rounded">saveUser</button>
+                    <div class="content">
+                      <p class="font-text-3">&nbsp&nbspNote: It can take few moments to update the DB.</p>
+                      <pre><code class="language-js rounded">      // Requiring the Package
+      const CurrencySystem = require("currency-system");
+      const cs = new CurrencySystem;
+      // Method:
+      cs.saveUser('Raw data from findUser Function.');</code></pre>
+
+                    </div>
+                    <span class="text-gray-500 text-3 text-2xl">3. Wait for x time.</span> <button
+                      class="collapsible text-3 px-2 rounded">sleep</button>
+                    <div class="content">
+                      <p class="font-text-3">&nbsp&nbspNote: It uses mili-seconds. You need to await it else it wont
+                        work.</p>
+                      <pre><code class="language-js rounded">      // Requiring the Package
+      const CurrencySystem = require("currency-system");
+      const cs = new CurrencySystem;
+      // Method:
+       await cs.sleep(Time_in_MS);</code></pre>
+
+                    </div>
+                  </div>
+                  <!-- end -->
+                  <!-- start -->
+                  <span
+                    class="text-white text-2 text-4xl py-4 bg-gradient-to-r from-red-500 via-red-500 to-pink-600 rounded px-1 py-1 shadow-md">Custom
+                    Commands</span> <!-- <span class="label success-label rounded">New</span> -->
+                  <div class="py-5">
+                    <div>
+                      <span class="text-gray-500 text-3 text-2xl">1. Bank Note command.</span> <a
+                        href="https://github.com/BIntelligent/currency-system/blob/main/v13-ExampleBot/src/commands/banknote.js"><button
+                          class="collapsible text-3 px-2 rounded">Click To View.</button></a>
+                    </div>
+                    <div>
+                      <span class="text-gray-500 text-3 text-2xl">2. Slot command command.</span> <a
+                        href="https://github.com/BIntelligent/currency-system/blob/main/v13-ExampleBot/src/commands/slot.js"><button
+                          class="collapsible text-3 px-2 rounded">Click To View.</button></a>
+                    </div>
+                    <div>
+                      <span class="text-gray-500 text-3 text-2xl">3. Set Bank Space command.</span> <a
+                        href="https://github.com/BIntelligent/currency-system/blob/main/v13-ExampleBot/src/commands/setBankSpace.js"><button
+                          class="collapsible text-3 px-2 rounded">Click To View.</button></a>
+                    </div>
+
+                  </div>
+                  <!-- end -->
+                  <div class="py-5">
+                    <center>
+                      <span
+                        class="text-white text-2 text-4xl bg-gradient-to-r from-red-500 via-red-500 to-pink-600 rounded px-1 py-1 shadow-md">Pro
+                        Tips</span>
+                      <div class="py-5">
+                        <span class="text-gray-500 text-3 text-2xl">If you want your bot to never crash on errors use
+                          following code:</span>
+                        <div class="px-40 py-10">
+                          <pre><code class="language-js rounded"> process.on("unhandledRejection", _ => console.error(_.stack + '\n' + '='.repeat(20)));</code></pre>
+                        </div>
+                      </div>
+                    </center>
+                  </div>
+                  <!-- Example Bot -->
+
+                  <div class="py-5">
+                    <center>
+                      <span class="text text-white text-4xl">Make Sure to check out our Example <br> Bot for more
+                        guidance :)</span>
+                      <div class="py-4 px-4">
+                        <a href="https://github.com/BIntelligent/currency-system/tree/main/v13-ExampleBot"
+                          target="_blank" class="btn success px-2 py-2 rounded">Example Bot</a>
+                      </div>
+                    </center>
+                  </div>
+                </div>
+
+
+</body>
+
+<hr class="break">
+
+<!-- Footer -->
+
+<body>
+  <footer class="footer">
+    <div class="container">
+      <img class="img" src="images/currency-system logo.png" height="120" width="120">
+      <h2><span
+          class="text-2 font-3xl text-white bg-gradient-to-r from-red-500 via-red-500 to-pink-600 rounded px-1 py-1">Currency
+          System</span></h2>
+      <div class="row py-10">
+        <div class="footer-col">
+          <h4>Socials</h4>
+          <ul class="text-2">
+            <li><a href="https://discord.gg/stERZwjA9m">Discord</a></li>
+            <li><a href="https://github.com/BIntelligent">GitHub</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Currency-System</h4>
+          <ul class="text-2">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="example.html">Examples</a></li>
+            <li><a href="#">Npm Package</a></li>
+          </ul>
+        </div>
+
+      </div>
+  </footer>
+</body>
+
+</div>
+<div>
+  <h3 class="text-white text-2 text-1xl px-10 py-4">&#169; currency-system 2021, All Rights Reserved.</h3>
+</div>
+</body>
+
+</html>

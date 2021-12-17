@@ -1,0 +1,224 @@
+<!doctype html>
+<html>
+
+<head>
+  <link rel="icon"
+    href="https://cdn.discordapp.com/attachments/884119662097498163/919820471434883082/image-removebg-preview.png">
+
+  <html lang="en">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency System</title>
+  <script src="https://kit.fontawesome.com/36d3d7529a.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <head>
+    <link rel="stylesheet" href="https://highlightjs.org/static/demo/styles/github-dark-dimmed.css">
+  </head>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+  <script>
+    hljs.highlightAll();
+  </script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<center>
+
+  <body class="bg-gray-900">
+    <h1 class="text-3xl text-5xl text px-10 py-4 white-gray">
+      Currency System
+    </h1>
+    <h3 class="text-2 text-2xl px-10 py-2 text-white">Discord.js currency system, made <span
+        class="bg-gradient-to-r from-red-500 via-red-500 to-pink-600 rounded px-1 py-1">easier</span></h3>
+</center>
+
+<div>
+  <h3 class="text-3 undercase text-gray-500 text-3xl py-5 px-5 text-bold">Npm Package</h3>
+  <div class="px-5 py-5">
+    <a href="https://www.npmjs.com/package/currency-system"><img
+        src="https://nodei.co/npm/currency-system.png?downloads=true&stars=true" alt="NPM Banner"></a>
+  </div>
+
+  <div class="px-20 py-20">
+    <span class="text-white text-2 text-3xl">📂 | Installation</span> <br>
+    <pre><code class="language-js rounded">npm i currency-system</code></pre>
+  </div>
+
+  <div class="px-20 py-10">
+    <span class="text-white text-2 text-3xl">📰 | Setup</span> <br>
+    <pre><code class="language-js rounded">const CurrencySystem = require("currency-system");
+    const cs = new CurrencySystem;
+    // Debug logs! Helps in finding issues!
+    CurrencySystem.cs.on('debug', (debug, error) => {
+        console.log(debug);
+        if (error) console.error(error);
+    });
+    // Login To Discord Bot Client!!
+    client.login(token);
+    // Set MongoDB URL!
+    cs.setMongoURL(mongourl);
+    // Set Default Bank Amount when a new user is created!
+    cs.setDefaultBankAmount(1000);
+    //  Its bank space limit (can be changed according to per user) here 0 means infinite.
+    cs.setMaxBankAmount(10000);
+    // Set Default Maximum Amount of Wallet Currency a user can have! (can be changed according to per user) here 0 means infinite.
+    cs.setMaxWalletAmount(10000);
+    // Search for new npm package updates on bot startup! Latest version will be displayed in console.
+    cs.searchForNewUpdate(true)
+    // Set Default Maximum Amount of Bank Currency a user can have! (can be changed according to per user) here 0 means infinite.
+    cs.setDefaultBankLimitForUser(1000)</code></pre>
+  </div>
+
+  <div class="px-20 py-10">
+    <span class="text-white text-2 text-3xl">✍️ | Examples</span> <br>
+    <div class="py-4 px-4">
+      <a href="example.html" class="btn success px-2 py-2 rounded">Click Me</a>
+    </div>
+  </div>
+
+  <div class="px-20 py-5">
+    <span class="text-white text-2 text-3xl">🐉 | Contributers</span>
+  </div>
+
+  <!-- Card 1 -->
+  <center>
+
+    <body>
+
+      <div class="px-20 py-30">
+        <div class="container">
+
+          <!--Be Intelligent-->
+
+          <!--Profile Banner-->
+
+          <div class="card">
+            <img width=250px height=250px class="banner-be"></img>
+          </div>
+
+          <!---->
+
+          <!--First-->
+          <div class="card">
+            <div class="adjust">
+              <img src="images/be-intelligent new av.png" alt="profile img" class="rounded-circle" width="80px"
+                height="80px">
+              <h1 class="text-white text text-2xl">Be Intelligent#5230</h1>
+            </div>
+
+            <!---Second-->
+
+            <div class="card-body second">
+              <p class="text-2 text-gray-500 text-1xl">
+                Contributed In
+              </p>
+              <h4 class="text-2 text-white">Main package developer</h4>
+            </div>
+            <center>
+              <div class="card-social-icons">
+
+
+                <a href="https://discord.gg/stERZwjA9m" target="_blank" class="fab fa-discord dc"></a>
+                <a href="https://github.com/BIntelligent" target="_blank" class="fab fa-github git"></a>
+
+              </div>
+            </center>
+          </div>
+        </div>
+      </div>
+    </body>
+
+    <!-- Card 1 END -->
+    <hr class="transparent-shit py-10">
+    <!-- Card 2 -->
+
+    <body>
+      <div class="profile-card">
+        <div class="container">
+
+          <!-- 365 -->
+
+          <!--Profile Banner-->
+
+          <div class="card">
+            <img src="images/365 banner.gif" width=250px height=250px class="banner-365"></img>
+          </div>
+
+          <!---->
+
+          <!--First-->
+          <div class="card">
+            <div class="adjust">
+              <img src="images/365- op av.gif" alt="profile img" class="rounded-circle" width="80px" height="80px">
+              <h1 class="text-white text text-2xl">365 Gaming n More_2.0#0002</h1>
+            </div>
+
+            <!---Second-->
+
+            <div class="card-body second">
+              <p class="text-2 text-gray-500 text-1xl">
+                Contributed In
+              </p>
+              <h4 class="text-2 text-white">Main currency-system web developer</h4>
+            </div>
+            <center>
+              <div class="card-social-icons">
+
+
+                <a href="#" target="_blank" class="fab fa-discord dc"></a>
+                <a href="https://youtube.com/discordtricks" target="_blank" class="fab fa-youtube yt"></a>
+                <a href="https://github.com/drstrangegithub" target="_blank" class="fab fa-github git"></a>
+                <a href="https://twitter.com/discordtricks" target="_blank" class="fab fa-twitter tweet"></a>
+
+              </div>
+            </center>
+          </div>
+        </div>
+      </div>
+</div>
+</body>
+</center>
+
+<!-- Card 2 END -->
+
+</div>
+
+<hr class="break">
+
+<!-- Footer -->
+
+<body>
+  <footer class="footer">
+    <div class="container">
+      <img class="img" src="images/currency-system logo.png" height="120" width="120">
+      <h2><span
+          class="text-2 font-3xl text-white bg-gradient-to-r from-red-500 via-red-500 to-pink-600 rounded px-1 py-1">Currency
+          System</span></h2>
+      <div class="row py-10">
+        <div class="footer-col">
+          <h4>Socials</h4>
+          <ul class="text-2">
+            <li><a href="https://discord.gg/stERZwjA9m">Discord</a></li>
+            <li><a href="https://github.com/BIntelligent">GitHub</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Currency-System</h4>
+          <ul class="text-2">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="example.html">Examples</a></li>
+            <li><a href="#">Npm Package</a></li>
+          </ul>
+        </div>
+
+      </div>
+  </footer>
+</body>
+
+</div>
+</body>
+
+</html>

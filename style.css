@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.break {
+  border: none;
+  height: 4px;
+  background: #3d3d3d;
+}
+
+.text {
+  font-family: 'Passion One', sans-serif;
+}
+
+.text-2 {
+  font-family: 'Luckiest Guy', cursive;
+}
+
+.text-3 {
+  font-family: 'Bebas Neue', cursive;
+}
+
+.white-gray {
+  color: #F4F4F4;
+}
+
+.code-block {
+  padding: 5px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: gray;
+  border-radius: 3px;
+}
+
+.btn {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.success {
+  border-color: #04AA6D;
+  color: green;
+}
+
+.success:hover {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  outline: none;
+  font-size: 18px;
+}
+
+.active,
+.collapsible:hover {
+  background-color: #555;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: transparent;
+}
+
+.label {
+  color: white;
+  padding: 8px;
+}
+
+.success-label {
+  background-color: #04AA6D;
+  padding: 2px;
+}
+
+.img {
+  border-radius: 50%;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul {
+  list-style: none;
+  font-size: 10px;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.footer-col h4 {
+  font-size: 30px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col h4::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+/*Card*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.card {
+  background-color: rgb(36, 36, 33);
+  width: 260px;
+  border-radius: 5px;
+}
+
+.card-2 {
+  background-color: rgb(36, 36, 33);
+  width: 260px;
+  border-radius: 5px;
+}
+
+.banner-be {
+  background-color: lime;
+  width: 260px;
+  height: 140px;
+  border-radius: 6px;
+  padding: none;
+}
+
+.banner-365 {
+  width: 260px;
+  height: 140px;
+  border-radius: 6px;
+  padding: none;
+}
+
+.adjust {
+  padding: 16px;
+}
+
+.text-white {
+  font-size: 16px;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.second {
+  padding: 9px;
+  padding-right: 0px;
+  background-color: #2f3136;
+  width: 260;
+}
+
+.third {
+  padding: 9px;
+  padding-right: 0px;
+  background-color: #7289da;
+  width: 260;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.btn-team {
+  height: 60px;
+  width: 200px;
+  margin: 0rem;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+  float: left;
+  border-radius: 5px;
+  margin-top: 5px;
+  text-transform: none;
+}
+
+.text-server {
+  font-size: 16px;
+  margin-top: 16px;
+  font-weight: 500;
+  color: #fff;
+  float: left;
+}
+
+.about {
+  color: white;
+  font-size: 15px;
+}
+
+.rounded-circle {
+  border-radius: 50%;
+}
+
+.fab {
+  color: grey;
+  font-size: 24px;
+  margin: 15px;
+  cursor: pointer;
+}
+
+.dc:hover {
+  color: #1F56DE;
+}
+
+.yt:hover {
+  color: red;
+}
+
+.git:hover {
+  color: black;
+}
+
+.tweet:hover {
+  color: #1F9CDE;
+}
+
+.align {
+  display: inline;
+}
+
+.transparent-shit {
+  color: transparent;
+}
+
+.font-text-3 {
+  background-color: white;
+  color: black;
+}
