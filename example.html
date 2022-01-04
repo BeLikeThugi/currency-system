@@ -1,29 +1,29 @@
 <!doctype html>
 <html>
 
+<head>
+  <link rel="icon"
+    href="https://cdn.discordapp.com/attachments/884119662097498163/919820471434883082/image-removebg-preview.png">
+
+  <html lang="en">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Available Methods</title>
+  <script src="https://kit.fontawesome.com/36d3d7529a.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+
   <head>
-    <link rel="icon"
-      href="https://cdn.discordapp.com/attachments/884119662097498163/919820471434883082/image-removebg-preview.png">
-  
-    <html lang="en">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Available Methods</title>
-    <script src="https://kit.fontawesome.com/36d3d7529a.js" crossorigin="anonymous"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-  
-    <head>
-      <link rel="stylesheet" href="https://highlightjs.org/static/demo/styles/github-dark-dimmed.css">
-    </head>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
-    <script>
-      hljs.highlightAll();
-    </script>
-  
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://highlightjs.org/static/demo/styles/github-dark-dimmed.css">
   </head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+  <script>
+    hljs.highlightAll();
+  </script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
 
 <center>
 
@@ -58,7 +58,8 @@
     cs.setMongoURL('MongoURL Here');</code></pre>
       </div>
       <div class="py-5">
-        <span class="text-gray-500 text-3 text-2xl">2. ( optional ) Set's Default Wallet Amount when creating a new User.</span> <button class="collapsible text-3 px-2 rounded">setDefaultWalletAmount</button>
+        <span class="text-gray-500 text-3 text-2xl">2. ( optional ) Set's Default Wallet Amount when creating a new
+          User.</span> <button class="collapsible text-3 px-2 rounded">setDefaultWalletAmount</button>
         <div class="content">
           <!-- <p class="font-text-3">Put this in Index.js</p> -->
           <pre><code class="language-js rounded">    const CurrencySystem = require("currency-system");
@@ -68,7 +69,8 @@
         </div>
 
         <div class="py-5">
-          <span class="text-gray-500 text-3 text-2xl">3. ( optional ) Set's Default Bank Amount when creating a new User.</span> <button class="collapsible text-3 px-2 rounded">setDefaultBankAmount</button>
+          <span class="text-gray-500 text-3 text-2xl">3. ( optional ) Set's Default Bank Amount when creating a new
+            User.</span> <button class="collapsible text-3 px-2 rounded">setDefaultBankAmount</button>
           <div class="content">
             <!-- <p class="font-text-3">Put this in Index.js</p> -->
             <pre><code class="language-js rounded">      const CurrencySystem = require("currency-system");
@@ -78,7 +80,8 @@
           </div>
 
           <div class="py-5">
-            <span class="text-gray-500 text-3 text-2xl">4. ( optional ) Set's Default Wallet Amount when creating a new User Document.</span> <button class="collapsible text-3 px-2 rounded">setMaxWalletAmount</button>
+            <span class="text-gray-500 text-3 text-2xl">4. ( optional ) Set's Default Wallet Amount when creating a new
+              User Document.</span> <button class="collapsible text-3 px-2 rounded">setMaxWalletAmount</button>
             <div class="content">
               <!-- <p class="font-text-3">Put this in Index.js</p> -->
               <pre><code class="language-js rounded">      const CurrencySystem = require("currency-system");
@@ -88,7 +91,7 @@
             </div>
             <div class="py-5">
               <span class="text-gray-500 text-3 text-2xl">5. ( optional ) Set's Maximum Bank Amount limit of all
-                users.</span> <button class="collapsible text-3 px-2 rounded">setMaxBankAmount</button>
+                users.</span> <button class="collapsible text-3 px-2 rounded">setDefaultBankAmount</button>
               <div class="content">
                 <!-- <p class="font-text-3">Put this in Index.js</p> -->
                 <pre><code class="language-js rounded">      const CurrencySystem = require("currency-system");
@@ -165,8 +168,49 @@
       else message.reply(`Successfully removed $${money} to ${message.author.username}, ( from ${wheretoPutMoney} )`)</code></pre>
       </div>
       <!-- 3 -->
-
-      <span class="text-gray-500 text-3 text-2xl">3. Gamble's the money for a user with some success of winning double
+      <span class="text-gray-500 text-3 text-2xl">3. Add's Money To All Users in a provided guild.</span> <button
+        class="collapsible text-3 px-2 rounded">addMoneyToAllUsers</button>
+      <div class="content">
+        <!-- <p class="font-text-3">cs.addMoneyToAllUsers()</p> -->
+        <pre><code class="language-js rounded">      // Requiring the Package
+      const CurrencySystem = require("currency-system");
+      const cs = new CurrencySystem;
+      // Method:
+      const money = 1000;
+      const wheretoPutMoney = 'wallet'; // Or bank
+      let result = await cs.addMoneyToAllUsers({
+        guild: message.guild.id,
+        amount: money,
+        wheretoPutMoney: wheretoPutMoney
+      });
+      if (result.error) {
+        if (result.type === 'negative-money') return message.reply("You cant add negitive money");
+        else return message.reply('No User\'s found');
+    } else message.reply(`Successfully added $${money} to ${result.rawData.length} people!, ( in ${wheretoPutMoney} )`)</code></pre>
+      </div>
+      <!-- 4 -->
+      <span class="text-gray-500 text-3 text-2xl">4. Removes's Money To All Users in a provided guild.</span> <button
+        class="collapsible text-3 px-2 rounded">removeMoneyFromAllUsers</button>
+      <div class="content">
+        <!-- <p class="font-text-3">cs.removeMoneyFromAllUsers()</p> -->
+        <pre><code class="language-js rounded">      // Requiring the Package
+      const CurrencySystem = require("currency-system");
+      const cs = new CurrencySystem;
+      // Method:
+      const money = 1000;
+      const wheretoPutMoney = 'wallet'; // Or bank
+      let result = await cs.removeMoneyFromAllUsers({
+        guild: message.guild.id,
+        amount: money,
+        wheretoPutMoney: wheretoPutMoney
+      });
+      if (result.error) {
+        if (result.type === 'negative-money') return message.reply("You cant remove negitive money");
+        else return message.reply('No User\'s found');
+    } else message.reply(`Successfully removed $${money} from ${result.rawData.length} people!, ( in ${wheretoPutMoney} )`)</code></pre>
+      </div>
+      <!-- 5 -->
+      <span class="text-gray-500 text-3 text-2xl">5. Gamble's the money for a user with some success of winning double
         money than you Gambled for.</span> <button class="collapsible text-3 px-2 rounded">gamble</button>
       <div class="content">
         <!-- <p class="font-text-3">cs.gamble()</p> -->
@@ -195,9 +239,9 @@
       }</code></pre>
       </div>
 
-      <!-- 4 -->
+      <!-- 6 -->
 
-      <span class="text-gray-500 text-3 text-2xl">4. Add's money from wallet to bank.</span> <button
+      <span class="text-gray-500 text-3 text-2xl">6. Add's money from wallet to bank.</span> <button
         class="collapsible text-3 px-2 rounded">deposite</button>
       <div class="content">
         <!-- <p class="font-text-3">cs.deposite()</p> -->
@@ -224,9 +268,9 @@
       };</code></pre>
       </div>
 
-      <!-- 5 -->
+      <!-- 7 -->
 
-      <span class="text-gray-500 text-3 text-2xl">5. Take's money from bank to wallet.</span> <button
+      <span class="text-gray-500 text-3 text-2xl">7. Take's money from bank to wallet.</span> <button
         class="collapsible text-3 px-2 rounded">withdraw</button>
       <div class="content">
         <!-- <p class="font-text-3">cs.withdraw()</p> -->
@@ -253,9 +297,9 @@
 
       </div>
 
-      <!-- 6 -->
+      <!-- 8 -->
 
-      <span class="text-gray-500 text-3 text-2xl">6. Gets current balance of user ( Bank and wallet ).</span> <button
+      <span class="text-gray-500 text-3 text-2xl">8. Gets current balance of user ( Bank and wallet ).</span> <button
         class="collapsible text-3 px-2 rounded">balance</button>
       <div class="content">
         <!-- <p class="font-text-3">cs.balance()</p> -->
@@ -272,9 +316,9 @@
 
       </div>
 
-      <!-- 7 -->
+      <!-- 9 -->
 
-      <span class="text-gray-500 text-3 text-2xl">7. Moves money from one user to another.</span> <button
+      <span class="text-gray-500 text-3 text-2xl">9. Moves money from one user to another.</span> <button
         class="collapsible text-3 px-2 rounded">transferMoney</button>
       <div class="content">
         <!-- <p class="font-text-3">cs.transferMoney()</p> -->
@@ -501,7 +545,7 @@
       else message.reply(`You have earned $${result.amount}. Your streak is now ${result.rawData.streak.yearly}`);</code></pre>
               </div>
               <!-- 8 -->
-              <span class="text-gray-500 text-3 text-2xl">8. User can use it every x time. Which <span
+              <span class="text-gray-500 text-3 text-2xl">7. User can use it every x time. Which <span
                   class="bg-gradient-to-r from-red-500 via-red-500 to-pink-600 rounded px-1 text-white">Bot
                   Developor</span> can set.</span> <button class="collapsible text-3 px-2 rounded">work</button>
               <div class="content">
@@ -524,7 +568,7 @@
 
               <!-- 8 -->
 
-              <span class="text-gray-500 text-3 text-2xl">9. Rob's a user and have 50-50 chance of getting his
+              <span class="text-gray-500 text-3 text-2xl">8. Rob's a user and have 50-50 chance of getting his
                 money.</span>
               <button class="collapsible text-3 px-2 rounded">rob</button>
               <div class="content">
@@ -559,7 +603,7 @@
 
               <!-- 9 -->
 
-              <span class="text-gray-500 text-3 text-2xl">10. User can use it every x time. Which
+              <span class="text-gray-500 text-3 text-2xl">9. User can use it every x time. Which
                 <span class="bg-gradient-to-r from-red-500 via-red-500 to-pink-600 rounded px-1 text-white">Bot
                   Developor</span> can set.</span> <button class="collapsible text-3 px-2 rounded">beg</button>
               <div class="content">
@@ -726,7 +770,7 @@
                   <span class="text-gray-500 text-3 text-2xl">6. addUserItem Command for User's to buy items from
                     Shop.</span> <button class="collapsible text-3 px-2 rounded">addUserItem</button>
                   <div class="content">
-                    <!-- <p class="font-text-3">cs.addUserItem()</p> -->
+                    <p class="font-text-3">&nbsp;&nbsp;&nbsp;Note: This will remove money from user's bank</p>
                     <pre><code class="language-js rounded">      // Requiring the Package
       const CurrencySystem = require("currency-system");
       const cs = new CurrencySystem;
@@ -752,7 +796,7 @@
                   <span class="text-gray-500 text-3 text-2xl">7. Sell Command for User's to Sell items.</span> <button
                     class="collapsible text-3 px-2 rounded">removeUserItem</button>
                   <div class="content">
-                    <!-- <p class="font-text-3">cs.removeUserItem()</p> -->
+                    <p class="font-text-3">&nbsp;&nbsp;&nbsp;Note: This will NOT add money to user's bank</p>
                     <pre><code class="language-js rounded">      // Requiring the Package
       const CurrencySystem = require("currency-system");
       const cs = new CurrencySystem;
