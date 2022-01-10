@@ -32,6 +32,7 @@ module.exports = model('currency', new Schema({
   lastYearly: def,
   lastBegged: def,
   lastWork: def,
+  lastSpade: def,
   bankSpace: def,
   streak: {
     hourly: def2,
