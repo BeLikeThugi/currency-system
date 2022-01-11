@@ -61,7 +61,7 @@ function amount(data, type = 'add', where = 'wallet', amount, by) {
     } catch (E) {};
     return data;
 };
-// ===================================================================
+
 async function setBankSpace(userID, guildID, newAmount) {
     let data = await findUser({}, userID, guildID, arguments.callee.toString().substring(15, arguments.callee.toString().indexOf('(')))
     const oldData = data;
@@ -87,7 +87,34 @@ async function setBankSpace(userID, guildID, newAmount) {
         rawData: data
     }
 }
-// ===================================================================
+//=================================================================================
+async function spade(settings) {
+    let data = await findUser(settings, null, null, arguments.callee.toString().substring(15, arguments.callee.toString().indexOf('(')))
+    const oldData = data;
+    let spade = data.lastSpade; // XDDDD
+    let timeout = 180;
+    if (parseInt(settings.cooldown)) timeout = parseInt(settings.cooldown);
+    if (spade !== null && timeout - (Date.now() - spade) / 1000 > 0) return {
+        error: true,
+        type: 'time',
+        time: parseSeconds(Math.floor(timeout - (Date.now() - spade) / 1000))
+    };
+    else {
+        const amountt = Math.round((settings.minAmount || 200) + Math.random() * (settings.maxAmount || 400));
+        data.lastSpade = Date.now();
+        data = amount(data, 'add', 'wallet', amountt, arguments.callee.toString().substring(15, arguments.callee.toString().indexOf('(')));
+        await saveUser(data);
+        event.emit('userUpdate', oldData, data);
+
+        return {
+            error: false,
+            type: 'success',
+            amount: amountt
+        };
+
+    };
+};
+//=================================================================================
 async function gamble(settings) {
     let data = await findUser(settings, null, null, arguments.callee.toString().substring(15, arguments.callee.toString().indexOf('(')))
     const oldData = data;
@@ -325,7 +352,7 @@ async function globalLeaderboard() {
     let array = await cs.find();
     var output = [];
     array.forEach(function (item) {
-        var existing = output.filter(function (v, i) {
+        var existing = output.filter(function (v) {
             return v.userID == item.userID;
         });
         if (existing.length) {
@@ -687,7 +714,7 @@ async function addMoneyToAllUsers(settings) {
     });
     event.emit('usersUpdate', oldData, data);
 
-    data.forEach(a => a.save(function (err, saved) {
+    data.forEach(a => a.save(function (err) {
         if (err) console.log(err);
     }));
 
@@ -723,7 +750,6 @@ async function removeMoneyFromAllUsers(settings) {
         error: true,
         type: 'negative-money'
     };
-    let amountt = parseInt(settings.amount) || 0;
 
     if (typeof settings.guild === 'string') settings.guild = {
         id: settings.guild
@@ -750,7 +776,7 @@ async function removeMoneyFromAllUsers(settings) {
         }
     });
     event.emit('usersUpdate', oldData, data);
-    data.forEach(a => a.save(function (err, saved) {
+    data.forEach(a => a.save(function (err) {
         if (err) console.log(err);
     }));
 
@@ -1156,6 +1182,7 @@ module.exports = {
     hourly,
     rob,
     beg,
+    spade,
     addMoney,
     removeMoney,
     transferMoney,
